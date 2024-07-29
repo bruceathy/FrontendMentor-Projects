@@ -1,0 +1,29 @@
+@media (max-width: 320px) {
+  body {
+    background-color: #ffffff;
+  }
+  main {
+    flex-direction: column;
+  }
+
+  .mobile-faces {
+    display: inline;
+  }
+
+  .right,
+  .left {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  body {
+    background-color: #7b1212;
+  }
+  .footer-content {
+    flex-direction: column;
+  }
+  .hero {
+    z-index: 0;
+  }
+}

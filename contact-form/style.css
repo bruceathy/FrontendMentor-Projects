@@ -1,0 +1,8 @@
+/* dark: text & light: background */
+
+:root {
+  --dark: #000;
+  --light: #fff;
+  --primary: #fc7614;
+  --secondary: #7c8798;
+}

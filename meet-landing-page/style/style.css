@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #cdcdcd;
+  overflow-x: hidden;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  line-height: 4rem;
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 2.75rem;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+.logo {
+  padding: 1.2rem 0;
+}
+
+.mobile-faces {
+  display: none;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero h1 {
+  font-weight: 900;
+  margin-bottom: 0.8rem;
+}
+
+.hero p {
+  margin-bottom: 1.9rem;
+  color: #28283d;
+}
+
+.hero-btns a {
+  color: #fff;
+  padding: 0.9rem 1.2rem;
+  border-radius: 30px;
+}
+
+.download-btn {
+  background-color: #4d96a9;
+  margin-right: 0.3rem;
+}
+
+.download-btn strong {
+  color: #8fe3f9;
+}
+
+.download-btn:hover {
+  background-color: #71c0d4;
+  cursor: pointer;
+}
+
+.faq-btn {
+  background-color: #855fb1;
+  margin-left: 0.3rem;
+}
+
+.faq-btn:hover {
+  background-color: #b18bdd;
+  cursor: pointer;
+}
+
+.photo-container {
+  display: flex;
+  padding: 0 3.2rem;
+  margin: 1.2rem 0;
+  justify-content: space-around;
+}
+
+.photo-container img {
+  height: 250px;
+  width: 250px;
+  margin: 0.3rem;
+  border-radius: 5px;
+}
+
+.section {
+  /* padding: 0px 28.1rem 3.1rem 28.1rem; */
+  margin: 3rem 28rem;
+}
+
+.overline {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.section p {
+  color: #28283d;
+}
+
+.footer {
+  background-image: url("../assets/desktop/image-footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  background-color: #0088aaac;
+  color: #fafafa;
+  padding: 4.7rem 12.5rem;
+}
+
+.footer-content h2 {
+  padding: 0 0.6rem;
+}
+.statement {
+  padding: 0 9.4rem;
+}
+
+.footer-btn {
+  display: flex;
+  padding: 0.9rem 1.2rem;
+  border-radius: 30px;
+  background-color: #855fb1;
+}
+.footer-btn strong {
+  color: #d9b8ff;
+  margin-left: 0.2rem;
+}
+.footer-btn:hover {
+  background-color: #b18bdd;
+  cursor: pointer;
+}
