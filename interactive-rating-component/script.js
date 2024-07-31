@@ -14,7 +14,6 @@ ratingBtns.forEach((btn) => {
   });
 });
 
-// change container html to display thank for rating
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
   if (ratingChoice === "") {
@@ -22,9 +21,8 @@ submitBtn.addEventListener("click", (e) => {
     return;
   }
   {
-    alert(`You selected ${rating} out of 5`);
-    // card.classList.add("hidden");
-    // thankYou.classList.remove("hidden");
-    // rating.innerHTML = ratingChoice;
+    card.classList.add("hidden");
+    thankYou.classList.remove("hidden");
+    rating.textContent = `${ratingChoice}`;
   }
 });
