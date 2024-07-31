@@ -1,29 +1,30 @@
 const submitBtn = document.getElementById("submit-btn");
-const container = document.getElementById("container");
+const card = document.getElementById("card");
+const thankYou = document.getElementById("thank-you");
+const rating = document.getElementById("rating");
 const ratingBtns = document.querySelectorAll(".rating-btn");
 
-let rating = "";
+let ratingChoice = "";
 
 ratingBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     ratingBtns.forEach((btn) => btn.classList.remove("active"));
     btn.classList.add("active");
-    rating = btn.id;
+    ratingChoice = btn.id;
   });
 });
 
+// change container html to display thank for rating
 submitBtn.addEventListener("click", (e) => {
-  // e.preventDefault();
-  if (rating === "") {
+  e.preventDefault();
+  if (ratingChoice === "") {
     alert("Please select a rating");
     return;
   }
   {
     alert(`You selected ${rating} out of 5`);
-    // container.innerHTML = `
-    // <h1>You selected ${rating} out of 5</h1>
-    // <h2>Thank you!</h2>
-    // <p>We appreciate you taking the time to give a rating.
-    // If you ever need more support, don't hesitate to get in touch!</p>`;
+    // card.classList.add("hidden");
+    // thankYou.classList.remove("hidden");
+    // rating.innerHTML = ratingChoice;
   }
 });

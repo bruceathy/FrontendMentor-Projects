@@ -10,7 +10,7 @@ body {
   background-color: #111111;
 }
 
-.container {
+.card {
   padding: 2rem;
   height: 50%;
   width: 300px;
@@ -19,13 +19,13 @@ body {
   margin: 7rem auto;
 }
 
-.container h1 {
+.card h1 {
   color: #fff;
   margin: 1rem 0 0.5rem 0;
   font-weight: 700;
 }
 
-.container p {
+.card p {
   color: #7c8798;
   margin-bottom: 1.5rem;
   line-height: 1.5rem;
@@ -44,7 +44,7 @@ body {
   color: #7c8798;
 }
 
-.rating {
+.options {
   display: flex;
   justify-content: space-around;
 }
