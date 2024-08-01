@@ -17,8 +17,8 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
+- Semantic HTML5 Markup
+- CSS Custom Properties
 - Vanilla JavaScript
 
 ## Author
