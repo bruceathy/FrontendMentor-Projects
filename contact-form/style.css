@@ -28,6 +28,8 @@ body {
   background-size: cover;
   height: 100vh;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   font-family: Karla, sans-serif;
   overscroll-behavior: none;
@@ -41,18 +43,17 @@ h1 {
 }
 
 form {
-  width: 600px;
+  width: 500px;
   height: max-content;
   margin: 2rem;
-  padding: 1.5rem;
+  padding: 2rem 0.7rem;
   background-color: var(--light);
   border-radius: 0.5em;
-  border: var(--dark) 3px solid;
+  border: var(--dark) 2px solid;
 }
 
 input,
 textarea {
-  width: 100%;
   padding: 0.5rem;
   margin: 0.2rem 0;
   border: var(--secondary) 1px solid;
@@ -60,15 +61,87 @@ textarea {
 }
 
 textarea {
+  width: 100%;
   resize: none;
+}
+
+strong {
+  color: var(--primary);
 }
 
 .error {
   color: var(--primary);
+  display: none;
+}
+
+.name-sec {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
 }
 
 .name {
+  padding: 0 0.3rem;
+}
+
+.name input,
+.email-sec input {
+  width: 100%;
+}
+
+.email-sec {
+  margin-bottom: 0.5rem;
+}
+
+.query-sec {
   display: flex;
-  justify-content: space-between;
-  background-color: #4898e3;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.query-type {
+  display: flex;
+  justify-content: center;
+}
+
+.query-border {
+  border: var(--secondary) 1px solid;
+  border-radius: 0.3em;
+  padding: 0.3rem;
+  margin: 0 0.2rem;
+  cursor: pointer;
+}
+
+.query-border input {
+  cursor: pointer;
+  margin-right: 0.2rem;
+}
+
+.consent-sec input {
+  margin-right: 0.3rem;
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: 0.7rem;
+  background-color: var(--primary);
+  padding: 0.5rem;
+  border-radius: 0.3em;
+  color: var(--light);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 1.2rem;
+  color: var(--light);
+  margin-top: 0.5rem;
+  font-weight: 700;
+}
+
+.attribution a {
+  color: var(--light);
+  font-weight: 700;
 }

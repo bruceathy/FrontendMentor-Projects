@@ -16,44 +16,58 @@
   <body>
     <form>
       <h1>Contact Us</h1>
-      <section class="name">
-        <div>
-          <label for="first-name">First Name</label>
+      <section class="name-sec">
+        <div class="name">
+          <label for="first-name">First Name <strong>*</strong></label>
           <input type="text" id="first-name" required />
           <p class="error">This field is required</p>
         </div>
-        <div>
-          <label for="last-name" id="last-name">Last Name</label>
+        <div class="name">
+          <label for="last-name" id="last-name">Last Name <strong>*</strong></label>
           <input type="text" id="last-name" required />
           <p class="error">This field is required</p>
         </div>
       </section>
 
-      <labael for="email">Email Address</label>
-      <input type="email" id="email" required />
-      <p class="error">Please enter a valid email address</p>
+      <section class="email-sec">
+        <label for="email">Email Address <strong>*</strong></label>
+        <input type="email" id="email" required />
+        <p class="error">Please enter a valid email address</p>
+      </section>
 
-      <label for="query">Query Type</label>
-      <div id="query">
-        <button type="radio" id="general-enquiry">General Enquiry</button>
-        <button type="radio" id="support-request">Support Request</button>
+      <section class="query-sec">
+        <label for="query">Query Type <strong>*</strong></label>
+        <div id="query" class="query-type">
+          <div class="query-border">
+            <input type="radio">General Enquiry</input>
+          </div>
+          <div class="query-border">
+            <input type="radio">Support Request</input>
+          </div>
+        </div>
         <p class="error">Please select a query type</p>
-      </div>
+      </section>
       
-      <label for="message">Message</label>
-      <textarea id="message" required></textarea>
-      <p class="error">This field is required</p>
-      <input type="checkbox">I consent to being contacted by the team</input>
-      <p class="error">
-        To submit this form, please consent to being contacted Submit Message
-        Sent!
-      </p>
-      <p>Thanks for completing the form. We'll be in touch soon!</p>
+      <section class="message-sec">
+        <label for="message">Message <strong>*</strong></label>
+        <textarea id="message" rows="6" required></textarea>
+        <p class="error">This field is required</p>
+      </section>
+      <section class="consent-sec">
+        <input type="checkbox">I consent to being contacted by the team</input>
+        <p class="error">To submit this form, please consent to being contacted</p>
+      </section>
+      
+      <button type="submit" class="submit-btn">Submit</button>
+      <!-- 
+      <p>Message Sent!</p>
+      <p>Thanks for completing the form. We'll be in touch soon!</p> 
+      -->
     </form>
     <div class="attribution">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-      Coded by <a href="https://twitter.com/breezytresbeau">Bruce H. Athy</a>.
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://twitter.com/breezytresbeau" target="_blank">Bruce H. Athy</a>.
     </div>
   </body>
 </html>
