@@ -76,12 +76,12 @@ strong {
 
 .name-sec {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 0.5rem;
 }
 
 .name {
-  padding: 0 0.3rem;
+  width: 49%;
 }
 
 .name input,
@@ -108,9 +108,10 @@ strong {
 
 .query-border {
   border: var(--secondary) 1px solid;
+  width: 50%;
   border-radius: 0.3em;
   padding: 0.3rem;
-  margin: 0 0.2rem;
+  margin: 0.2rem;
   cursor: pointer;
 }
 
