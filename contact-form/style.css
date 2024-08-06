@@ -181,3 +181,39 @@ strong {
   color: var(--light);
   font-weight: 700;
 }
+
+@media screen and (max-width: 500px) {
+  body {
+    overscroll-behavior: auto;
+    background-color: #0273ab;
+  }
+  form {
+    width: 90%;
+    margin-bottom: 0.5rem;
+  }
+
+  .thank-you {
+    width: 70%;
+  }
+
+  .name-sec {
+    flex-direction: column;
+  }
+
+  .name-sec :last-child {
+    margin-bottom: 0;
+  }
+
+  .name {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .query-type {
+    flex-direction: column;
+  }
+
+  .query-border {
+    width: 100%;
+  }
+}
