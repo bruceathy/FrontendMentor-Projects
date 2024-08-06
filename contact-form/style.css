@@ -23,7 +23,7 @@
 }
 
 body {
-  background-image: linear-gradient(200deg, #ebffeb 10%, #b9ffb2 90%);
+  background-image: linear-gradient(200deg, #e1ffe1 10%, #a4ff9c 90%);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -73,6 +73,19 @@ strong {
   color: var(--primary);
 }
 
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: var(--primary);
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.3rem;
+}
+
+input[type="checkbox"]:focus,
+input[type="radio"]:focus {
+  outline: none;
+}
+
 .thank-you {
   display: flex;
   flex-direction: column;
@@ -107,7 +120,7 @@ strong {
 }
 
 .error {
-  color: var(--primary);
+  color: #970000;
 }
 
 .hidden {
@@ -143,26 +156,31 @@ strong {
 
 .query-type {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .query-border {
+  display: flex;
+  align-items: center;
   border: var(--secondary) 1px solid;
-  width: 50%;
+  width: 49%;
   border-radius: 0.3em;
-  padding: 0.3rem;
-  margin: 0.2rem;
+  padding: 0.3rem 0.7rem;
+  margin: 0.2rem 0;
 }
 
 .query-border input {
   cursor: pointer;
-  margin-right: 0.2rem;
 }
 
-.consent-sec input {
-  margin-right: 0.3rem;
+.consent-sec {
+  width: 100%;
 }
 
+.consent {
+  display: flex;
+  align-items: center;
+}
 .submit-btn {
   width: 100%;
   margin-top: 0.7rem;
