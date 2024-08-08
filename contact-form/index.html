@@ -17,61 +17,91 @@
   <body>
     <div class="thank-you hidden" id="thank-you">
       <h3><i class="ph ph-check-circle"></i>Message Sent!</h3>
-      <p>Thanks for completing the form <strong id="name" class="thank-you-name"></strong>, we'll be in touch soon!</p> 
+      <p>
+        Thanks for completing the form
+        <strong id="name" class="thank-you-name"></strong>, we'll be in touch
+        soon!
+      </p>
     </div>
-    <form>
+    <form id="contact-form">
       <h1>Contact Us</h1>
       <section class="name-sec">
         <div class="name">
-          <label for="first-name">First Name <strong>*</strong></label>
-          <input type="text" id="first-name"/>
-          <p class="error hidden" id="first-name-error">This field is required</p>
+          <label for="firstName">First Name <strong>*</strong></label>
+          <input type="text" name="firstName" id="first-name" />
+          <p class="error hidden" id="first-name-error">
+            This field is required
+          </p>
         </div>
         <div class="name">
-          <label for="last-name" id="last-name">Last Name <strong>*</strong></label>
-          <input type="text" id="last-name"/>
-          <p class="error hidden" id="last-name-error">This field is required</p>
+          <label for="lastName">Last Name <strong>*</strong></label>
+          <input type="text" name="lastName" id="last-name" />
+          <p class="error hidden" id="last-name-error">
+            This field is required
+          </p>
         </div>
       </section>
 
       <section class="email-sec">
         <label for="email">Email Address <strong>*</strong></label>
-        <input type="email" id="email"/>
-        <p class="error hidden" id="email-error">Please enter a valid email address</p>
+        <input type="email" name="email" id="email" />
+        <p class="error hidden" id="email-error">
+          Please enter a valid email address
+        </p>
       </section>
 
       <section class="query-sec">
         <label for="query">Query Type <strong>*</strong></label>
         <div id="query" class="query-type">
           <div class="query-border">
-            <input type="radio">General Enquiry</input>
+            <input
+              type="radio"
+              name="query"
+              id="generalEnquiry"
+              value="generalEnquiry"
+            />
+            <label for="generalEnquiry">General Enquiry</label>
           </div>
           <div class="query-border">
-            <input type="radio">Support Request</input>
+            <input
+              type="radio"
+              name="query"
+              id="supportRequest"
+              value="supportRequest"
+            />
+            <label for="supportRequest">Support Request</label>
           </div>
         </div>
         <p class="error hidden" id="query-error">Please select a query type</p>
       </section>
-      
+
       <section class="message-sec">
         <label for="message">Message <strong>*</strong></label>
-        <textarea id="message" rows="6"></textarea>
+        <textarea id="message" name="message" rows="6"></textarea>
         <p class="error hidden" id="message-error">This field is required</p>
       </section>
       <section class="consent-sec">
         <div class="consent">
-          <input type="checkbox" id="consent"></input>
-          <label for="consent">I consent to being contacted by the team<strong>*</strong></label>
+          <input type="checkbox" name="consent" id="consent" />
+          <label for="consent"
+            >I consent to being contacted by the team<strong>*</strong></label
+          >
         </div>
-        <p class="error hidden" id="consent-error">To submit this form, please consent to being contacted</p>
+        <p class="error hidden" id="consent-error">
+          To submit this form, please consent to being contacted
+        </p>
       </section>
-      
-      <button type="submit" class="submit-btn" id="submit-btn">Submit</button>
+
+      <button type="submit" class="submit-btn">Submit</button>
     </form>
     <div class="attribution">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="https://twitter.com/breezytresbeau" target="_blank">Bruce H. Athy</a>.
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://twitter.com/breezytresbeau" target="_blank"
+        >Bruce H. Athy</a
+      >.
     </div>
   </body>
 </html>
